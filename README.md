@@ -21,4 +21,4 @@ This repository provides a tutorial on how to compile assembly code for 8086 pro
 
 ## Usage
 
-Follow the instructions in `tutorial.md` to compile and run the `the given .asm` program.
+Follow the instructions in `tutorial.md` to compile and run the the given .asm program.
