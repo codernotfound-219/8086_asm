@@ -1,10 +1,10 @@
-.MODEL SMALL
-.STACK 100H
+.model SMALL
+.stack 100H
 
-.DATA
+.data
   hello DB 'Hello there!$'      ; $ ends the DOS string
 
-.CODE
+.code
   MOV AX, @DATA
   MOV DS, AX
 
