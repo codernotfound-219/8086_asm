@@ -1,0 +1,10 @@
+[default_config]
+version = "0.10.0"
+assembler = "masm"
+instruction_set = "x86"
+
+[default_config.opts]
+compiler = "go"
+compile_flags_txt = []
+diagnostics = true
+default_diagnostics = false
