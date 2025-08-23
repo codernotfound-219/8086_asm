@@ -10,7 +10,7 @@ This repository provides a tutorial on how to compile assembly code for 8086 pro
 *   `tutorial.md`: A step-by-step guide on how to set up DOSBox, compile, and run the assembly code.
 *   `README.md`:  This file.
 
-## Config Fiels
+## Config Files
 *   `.asm-lsp.toml`: Configuration file for the assembly language server.
 
 ## Prerequisites
