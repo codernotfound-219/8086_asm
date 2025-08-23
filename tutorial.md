@@ -1,5 +1,5 @@
 ## STEP 1: Coding
-1. Write your code {masm} to a .asm file.
+1. Write your code {masm} to a .asm file in the cwd. (.asm-lsp.toml is needed)
 2. Copy the file to ~/dos/tools
 
 ## STEP 2: Dosbox
