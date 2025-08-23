@@ -27,3 +27,9 @@
 ```bash
     debug filename.exe
 ```
+
+## MISC:
+1. To unmount:
+```bash
+    mount -u c
+```
