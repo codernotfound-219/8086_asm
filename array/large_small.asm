@@ -1,0 +1,45 @@
+DATA SEGMENT
+  ARR DB 21H, 03H, 52H, 21H, 89H, 21H, 89H
+  MIN DB ?
+  MAX DB ?
+DATA ENDS
+
+CODE SEGMENT
+  ASSUME CS:CODE, DS:DATA
+
+  START:
+    MOV AX, DATA
+    MOV DS, AX
+
+    MOV SI, OFFSET ARR
+    MOV AL, [SI]
+
+    MOV BL, AL
+    MOV BH, AL
+
+    INC SI
+    MOV CX, 06H
+
+  CONTINUE:
+    MOV AL, [SI]
+    CMP AL, BL
+    JA SKIP_MIN
+    MOV BL, AL
+
+  SKIP_MIN:
+    CMP AL, BH
+    JB SKIP_MAX
+    MOV BH, AL
+    
+  SKIP_MAX:
+    INC SI
+    LOOP CONTINUE
+
+    MOV MIN, BL
+    MOV MAX, BH
+
+    MOV AH, 4CH
+    INT 21H
+
+CODE ENDS
+END START
